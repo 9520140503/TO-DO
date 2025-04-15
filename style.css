@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightgray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    margin:100px auto 0;
+    width:80%;
+    max-width: 420px;
+    background-image: linear-gradient(to right, green,rgb(77, 154, 198));
+    border-radius: 10px;
+    padding:20px;
+}
+
+h1{
+    text-align: center;
+    font-size:25px;
+    font-weight:500;
+    color:white;
+}
+
+
+#input{
+   width: 76%;
+   padding:12px;
+   margin:5px;
+   margin-top:15px;
+   border-radius: 5px;
+   outline:0;
+   border:none;
+   font-size:16px;
+}
+
+#add{
+    background-color: black;
+    color:white;
+    padding: 4px;
+    border:0;
+    border-radius: 5px;
+    height: 45px;
+}
+
+
+.tasks-list{
+    width: 370px;
+    padding:10px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 10px;
+}
+
+#edit{
+    background-color: rgb(10, 71, 177);
+    border:none;
+    padding: 5px;
+    color:white;
+    border-radius: 5px;
+    position: absolute;
+    right:60px;
+    cursor: pointer;
+}
+
+#delete{
+    background-color: rgb(88, 177, 10);
+    border:none;
+    padding: 5px;
+    color:white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+@media (max-width:500px){
+    h1{
+        font-size: 20px;
+    }
+
+    #input{
+        width: 90%;
+    }
+
+    #add{
+        margin-left:7px;
+        margin-top:10px;
+        width: 90%;
+    }
+
+    .tasks-list{
+        width:90%;
+        margin-top:20px;
+    }
+}
+
+@media (max-width:390px){
+    h1{
+        font-size: 20px;
+    }
+
+    #input{
+        width: 90%;
+    }
+
+    #add{
+        margin-left:7px;
+        margin-top:10px;
+        width: 90%;
+    }
+
+    .tasks-list{
+        width:90%;
+        margin-top:20px;
+    }
+}
+
+
